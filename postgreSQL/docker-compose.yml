@@ -1,0 +1,9 @@
+psql:
+  image: postgres:latest
+  restart: always
+  ports:
+    - 5431:5432
+  environment:
+  - POSTGRES_DB=gestorandoMovies
+  - POSTGRES_USER=postgres
+  - POSTGRES_PASSWORD=gestorando
